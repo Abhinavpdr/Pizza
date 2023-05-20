@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: red;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  
+}
+.welcome-div{
+  width: 100%;
+ height: auto;
+  background-color: rgba(0, 0, 0, 0.525);
+
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+body{
+  background-image: url('resturant.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Concert One';font-size: 22ppx
+  cursor: cell;
+}
+
+
+
+
+
+h2{
+  font-family: 'Concert One';font-size: 22px;
+  text-align: center;
+  color: rgb(135, 44, 44);
+}
+h4,h5{
+  font-family: 'Concert One';
+}
+h6{
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* button-1*/
+.button1 {
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button1 span:after {
+  content: '  >>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: -15px;
+}
+.button1:hover{
+  border-color: #fff !important;
+}
+
+/* content*/
+.rowh{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* card*/
+.card{
+  border-radius: .625rem !important;
+  box-shadow: 0 0 .3125rem rgba(0,0,0,.25);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover{
+  transform: translateY(-0.25em);
+}
+.g{
+  height: 500px;
+}
+@media only screen and (max-width:700px){
+.g{
+   height: 500px !important;
+ }
+}
+
+
